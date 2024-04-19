@@ -6,11 +6,11 @@ ingress:
       cert-manager.io/cluster-issuer: letsencrypt-dev
       acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: dev-app.kurmanbek.life
+    - host: qa-app.kurmanbek.life
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
    - secretName: chart-example-tls
      hosts:
-       - dev-app.kurmanbek.life
+       - qa-app.kurmanbek.life
